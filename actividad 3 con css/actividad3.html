@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario de nuevo Usuario</title>
+</head>
+<body>
+    <script>event.preventDefault()</script>
+    <div class="titulo">
+        <h1>Formulario de nuevo usuario</h1>
+    </div>
+    
+    <div class="formulario">
+
+        <form action="enviado.html" method="post" id="formulario" enctype="application/x-www-form-urlencoded" target="_blank">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" value=""><br><br>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required autofocus="on"><br><br>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" maxlength="8" required><br><br>
+
+            <label for="foto">Foto:</label>
+            <input type="file" id="foto" name="foto" accept="image/jpeg,image/png"><br><br>
+
+            <input type="hidden" value="amigo" name="amigo">
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar formulario">
+            <button type="button" disabled>Boton fuera de servicio</button>
+        </form>
+    </div>
+
+    <div class="separacion"></div>
+    <div class="ejercicio">
+        <h2>Dados los siguientes atributos: <span>onclick</span>, <span>onkeydown</span>, <span>onmousemove</span>.</h2>
+        <h3>¿Qué tienen en común? ¿En qué consiste cada uno de ellos?</h3>
+        <p>Los atributos onclick, onkeydown y onmousemove son atributos de eventos en HTML que permiten ejecutar acciones en respuesta a interacciones del usuario con el navegador. Se usan comúnmente con JavaScript para crear páginas dinámicas e interactivas.</p>
+        <ul>
+            <li><strong>onclick:</strong> Se activa cuando el usuario hace clic en un elemento.</li>
+            <li><strong>onkeydown:</strong> Se activa cuando el usuario presiona una tecla en el teclado.</li>
+            <li><strong>onmousemove:</strong> Se activa cuando el usuario mueve el cursor del ratón sobre un elemento.</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
